@@ -1,0 +1,31 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "imhvost",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "gulp": "gulpjs/gulp#v4.0.0-alpha.3",
+    "gulp-babel": "latest",
+    "gulp-cheerio": "latest",
+    "gulp-file-include": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-include": "latest",
+    "gulp-less": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-replace": "latest",
+    "gulp-svg-sprites": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "latest",
+    "less-plugin-autoprefix": "latest",
+    "rimraf": "latest",
+    "uglify-es": "latest"
+  }
+}

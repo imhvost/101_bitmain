@@ -1,0 +1,146 @@
+*{
+	scrollbar-color:#999 #F2F2F2;
+	scrollbar-width:thin;
+}
+
+::-webkit-scrollbar{
+	width:4px;
+	height:4px;
+}
+::-webkit-scrollbar-track{
+	background:#F2F2F2;
+}
+::-webkit-scrollbar-thumb{
+	background:#999;
+}
+
+@font-face{
+	font-family:'Manrope';
+	font-display:swap;
+	src:
+		url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+		url('../fonts/Manrope-SemiBold.woff') format('woff'),
+		url('../fonts/Manrope-SemiBold.ttf') format('truetype');
+	font-weight:600;
+	font-style:normal;
+}
+@font-face{
+	font-family:'Manrope';
+	font-display:swap;
+	src:
+		url('../fonts/Manrope-Bold.woff2') format('woff2'),
+		url('../fonts/Manrope-Bold.woff') format('woff'),
+		url('../fonts/Manrope-Bold.ttf') format('truetype');
+	font-weight:700;
+	font-style:normal;
+}
+@font-face{
+	font-family:'Manrope';
+	font-display:swap;
+	src:
+		url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+		url('../fonts/Manrope-ExtraBold.woff') format('woff'),
+		url('../fonts/Manrope-ExtraBold.ttf') format('truetype');
+	font-weight:800;
+	font-style:normal;
+}
+
+.wp-block {
+    max-width: 1080px;
+}
+
+.wp-block[data-align="wide"] {
+    max-width: 1080px;
+}
+
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+.cf-complex__group-head{
+	padding-right:110px;
+}
+
+.cf-complex__group-title{
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+.cf-media-gallery__item-preview .cf-media-gallery__item-thumb{
+	max-width:100%;
+	object-position:center center;
+	object-fit:contain;
+}
+
+.wp-block-group__inner-container:after{
+	display:table;
+	line-height:0;
+	content:'';
+	clear:both;
+}
+
+.interface-interface-skeleton__content{
+	padding-bottom:25px;
+}
+
+.cf-media-gallery__list{
+	list-style:none!important;
+	margin:0!important;
+}
+
+[data-type*="carbon-fields/"]:before{
+	content:attr(data-title);
+	font-weight:700;
+	margin-bottom:16px;
+	display:block;
+	font-size:1.25rem;
+}
+
+.wp-block .cf-field__label{
+	font-weight:700;
+}
+
+[data-type*="carbon-fields/"]{
+	padding:20px 15px;
+	background-color:#f5f5f5;
+}
+
+.wp-block-group{
+	border:dashed 2px #ccc;
+	padding:10px;
+}
+.cf-container-user-meta{
+	max-width:none!important;
+}
+
+.flatpickr-months .flatpickr-month{
+	height:36px;
+}
+.cur-month{
+	margin-right:12px;
+}
+
+.cf-container__tabs-item button{
+	cursor:pointer;
+}
+
+.interface-interface-skeleton__sidebar{
+	overflow-y:scroll;
+}
+
+.cf-field__help{
+	margin-top:5px!important;
+}
+
+.cf-complex__tabs-item--tabbed-vertical .cf-complex__tabs-title{
+	overflow:hidden;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	text-overflow:ellipsis;
+	max-width:200px;
+}
+
+.cf-complex--tabbed-vertical .cf-complex__tabs-list{
+	padding-left:0;
+}
