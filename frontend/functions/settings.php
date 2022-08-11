@@ -44,6 +44,14 @@ add_filter( 'big_image_size_threshold', '__return_false' );
 remove_filter('the_content', 'wpautop');
 remove_filter('the_content', 'wptexturize');
 
+function bitmain_mce_options($init){
+	$init['wpautop'] = false;
+	$init['indent'] = true;
+	$init['tadv_noautop'] = true;
+	return $init;       
+}
+add_filter('tiny_mce_before_init','bitmain_mce_options');
+
 /* clear head */
 
 function bitmain_disable_emoji() {

@@ -171,7 +171,7 @@ function bitmain_crb_init_fields() {
 						->set_required( true )
 						->set_rows( 3 ),
 				) )
-				->set_header_template( '<%- title %>' ),
+				->set_header_template( '<%= title %>' ),
 			Field::make( 'text', 'advantages_btn', __( 'Кнопка', DOMAIN ) ),
 		) )
 		->add_tab( __( 'Документы', DOMAIN ), array(
@@ -184,6 +184,7 @@ function bitmain_crb_init_fields() {
 			Field::make( 'text', 'docs_btn', __( 'Кнопка', DOMAIN ) ),
 			Field::make( 'file', 'docs_video', __( 'Видео', DOMAIN ) )
 				->set_type( 'video' ),
+			Field::make( 'image', 'docs_video_img', __( 'Видео постер', DOMAIN ) ),
 		) )
 		->add_tab( __( 'FAQ', DOMAIN ), array(
 			Field::make( 'textarea', 'faq_title', __( 'Заголовок', DOMAIN ) )
